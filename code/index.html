@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TripO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1e90ff;
+
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    .search-bar input {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <div class="logo">TripO</div>
+    <nav>
+      <a href="#"><i class="fas fa-home"></i>Home</a>
+      <a href="#"><i class="fas fa-user"></i>Profile</a>
+      <a href="#"><i class="fas fa-gear"></i> Settings</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" >
+      </div>
+    </nav>
+    
+  </header>
+
+  <!-- Quick and Easy Trip Planner -->
+<section class="px-8 py-10 bg-white">
+  <h2 class="text-3xl font-bold mb-2">Quick Trip Planner</h2>
+  <p class="text-gray-600 mb-6">Pick a vibe and explore the top destinations in India</p>
+
+  <!-- Category Buttons -->
+  <div class="flex gap-6 mb-8 flex-wrap">
+    <button class="flex items-center gap-2 border border-blue-500 text-blue-500 px-4 py-2 rounded-full font-medium">
+      <i class="fas fa-city"></i> State
+    </button>
+    <button class="flex items-center gap-2 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-100">
+      <i class="fas fa-umbrella-beach"></i> Beach
+    </button>
+    <button class="flex items-center gap-2 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-100">
+      <i class="fas fa-hiking"></i> Outdoors
+    </button>
+    <button class="flex items-center gap-2 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-100">
+      <i class="fas fa-spa"></i> Relax
+    </button>
+    <button class="flex items-center gap-2 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-100">
+      <i class="far fa-heart"></i> Romance
+    </button>
+    <button class="flex items-center gap-2 text-gray-600 px-4 py-2 rounded-full hover:bg-gray-100">
+      <i class="fas fa-utensils"></i> Food
+    </button>
+  </div>
+
+  <!-- Places Cards -->
+  <div class="flex gap-4 overflow-x-auto pb-4">
+    <!-- Repeat this block for each destination -->
+    <!--states of india-->
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="drec()"src="ANDHRA-PRADESH.jpg" alt="Andhara Pradesh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Andhara Pradesh</h3>
+      <p class="text-gray-500 text-sm">🌄 "Andhra Pradesh From Sacred Peaks to Serene Shores."
+       📍 "Discover the Divine, Dance with the Sea.
+       <script>
+        function drec(){
+           window.location.href = "andhar.html";
+
+        }
+       </script>
+
+</p>
+
+    </div>
+    <div class="min-w-[200px]">
+      <img style ="cursor:pointer;" onclick="dv()" src="Arunachal pradesh.jpg" alt="Arunachal Pradesh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Arunachal pradesh</h3>
+      <p class="text-gray-500 text-sm">🌄 Arunachal Pradesh Where the Sun Rises on Untamed Beauty
+      🛕 Mystic Monasteries, Majestic Mountains
+      <script>
+        function dv(){
+           window.location.href = "arunachal.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="change()"src="assam.jpg" alt="Assam" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Assam</h3>
+      <p class="text-gray-500 text-sm">🌾Assam Where Tea Gardens Bloom and Rhinos Roam
+     🌄Mystic Valleys, Majestic Rivers, Timeless Traditions
+     <script>
+        function change(){
+           window.location.href = "Assam.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="Changeto()" src="Bihar.jpg" alt="Bihar" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Bihar</h3>
+      <p class="text-gray-500 text-sm">🌾Bihar Where Civilizations Rose and Legends Still Whisper
+             🛕From Bodh Gaya to Vaishali—Walk the Path of Enlightenment
+      <script>
+        function changeto(){
+           window.location.href = "bihar.html";
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno1()"   src="Goa.jpeg" alt="Goa" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Goa</h3>
+      <p class="text-gray-500 text-sm">🌊Goa Where Every Sunset Ends in a Story
+               🍹Beaches, Bazaars, and Blissful Beats
+        <script>
+        function changeno1(){
+           window.location.href = "goa.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;"  onclick="changeno2" src="chhattisgarh.jpg" alt="chhattisgarh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Chhatisgarh</h3>
+      <p class="text-gray-500 text-sm">🌿Chhattisgarh Where Forests Whisper and Waterfalls Roar
+               🏞️Untamed Trails, Timeless Temples.
+      <script>
+        function changeno2(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    
+    <!-- Repeat this block for each destination -->
+    <!--states of india-->
+    <!--part 2-->
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno3"   src="GUJARAT.jpeg" alt="Gujarat" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Gujarat</h3>
+      <p class="text-gray-500 text-sm">🏜️ “From Salt Deserts to Sacred Temples—Explore the Unexpected
+               🕉️Spiritual trails, royal tales—only in Gujarat”
+      <script>
+        function changeno3(){
+           window.location.href = "Gujarat.html";
+
+        }
+       </script>         
+      
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno4" src="HARIYANA.png" alt="Hariyana" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Hariyana</h3>
+      <p class="text-gray-500 text-sm">🛣️Haryana: Drive through history, dine by the roadside
+    <script>
+        function changeno4(){
+           window.location.href = "Hariyana.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;"  onclick="changeno5"   src="himachal.webp" alt="Himachal Pradesh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Himachal Pradesh</h3>
+      <p class="text-gray-500 text-sm">⛰️Where every mountain whispers a story
+      <script>
+        function changeno5(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno6"  src="jharkand.jpeg" alt="Jharkand" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Jharkand</h3>
+      <p class="text-gray-500 text-sm">🌳“Untamed, unexplored, unforgettable—welcome to Jharkhand"
+      <script>
+        function changeno6(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno7" src="karnataka.jpeg" alt="Karnataka" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Karnataka</h3>
+      <p class="text-gray-500 text-sm">🏯“Karnataka: From ancient ruins to space missions”
+      <script>
+        function changeno7(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno8" src="kerala.webp" alt="Kerala" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Kerala</h3>
+      <p class="text-gray-500 text-sm">🛶“Backwaters, beaches, and bliss—Kerala has it all"
+      <script>
+        function changeno8(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno9"  src="madhya pradesh.jpg" alt="Madhya Pradesh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Madhya Pradesh</h3>
+      <p class="text-gray-500 text-sm"> 🏞️“Madhya Pradesh: Where history and wilderness collide”
+      <script>
+        function changeno9(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno10"  src="Maharashtra.jpg" alt="Maharashtra" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Maharashtra</h3>
+      <p class="text-gray-500 text-sm">🌄Where Forts Whisper Legends, Cities Pulse with Dreams, and Every Sunset Tells a Story🕌🌇
+      <script>
+        function changeno10(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno11"  src="manipur.png" alt="Manipur" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Manipur</h3>
+      <p class="text-gray-500 text-sm">🌿Where Floating Lakes Dance, Hills Whisper Legends, and Culture Blooms in Every Step🦌🏞️
+      <script>
+        function changeno11(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno12" src="meghalaya.avif" alt="Meghalaya" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Meghalaya</h3>
+      <p class="text-gray-500 text-sm">Where Clouds Kiss the Hills, Waterfalls Sing, and Nature Paints in Emerald Hues🌿✨
+      <script>
+        function changeno12(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+
+
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno13"  src="mizoram.webp" alt="Mizoram" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Mizoram</h3>
+      <p class="text-gray-500 text-sm">🌄Where Hills Hum Ancient Songs, Waterfalls Whisper Secrets, and Every Trail Leads to Tranquility🌿✨
+      <script>
+        function changeno13(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+
+      </p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno14" src="nagaland.jpeg" alt="Nagaland" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Nagaland</h3>
+      <p class="text-gray-500 text-sm">🌄Where Tribes Tell Tales, Valleys Breathe Magic, and Every Festival Beats with Fire🔥🎶
+      <script>
+        function changeno14(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno15"  src="odisha.webp" alt="Odisha" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Odisha</h3>
+      <p class="text-gray-500 text-sm">🌊Where Temples Touch the Sky, Dolphins Dance in Lagoons, and Every Festival Feels Like a Fairytale🐬🏯
+      <script>
+        function changeno15(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno16"  src="punjab.jpg" alt="Punjab" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Punjab</h3>
+      <p class="text-gray-500 text-sm">🌾Where Fields Dance to Bhangra Beats, History Echoes in Forts, and Every Meal Feels Like a Celebration🥁🍛
+      <script>
+        function changeno16(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>  
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno17" src="Rajasthan.webp" alt="Rajasthan" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Rajasthan</h3>
+      <p class="text-gray-500 text-sm">🏰Where Palaces Echo Royalty, Sands Dance with Legends, and Every Sunset Paints a Golden Tale🌅🐪
+      <script>
+        function changeno17(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno18" src="sikkim.webp" alt="Sikkim" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Sikkim</h3>
+      <p class="text-gray-500 text-sm">🏔️Where the Himalayas Touch the Sky, Monasteries Hum with Peace, and Every Trail Leads to Wonder🌸🕉️
+    <script>
+        function changeno18(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script>
+    </div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno19"  src="Tamilnadu.jpeg" alt="Tamil Nadu" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Tamil Nadu</h3>
+      <p class="text-gray-500 text-sm">🌺Where Temples Breathe History, Hills Whisper Serenity, and Every Street Sings a Cultural Symphony🕉️🏞️
+    <script>
+        function changeno19(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;"onclick="changeno20" src="telangana.jpg" alt="Telangana" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Telangana</h3>
+      <p class="text-gray-500 text-sm">🕌Where Forts Guard Legends, Lakes Reflect Dreams, and Every Festival Lights Up the Soul🎉🌄
+    <script>
+        function changeno20(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno21" src="tripura.jpg" alt="Tripura" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">Tripura</h3>
+      <p class="text-gray-500 text-sm">🕌Where Forts Guard Legends, Lakes Reflect Dreams, and Every Festival Lights Up the Soul🎉🌄
+    <script>
+        function changeno21(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno22" src="uttarpradesh.avif" alt="uttarpradesh" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">UttarPradesh</h3>
+      <p class="text-gray-500 text-sm">🕌Where Forts Guard Legends, Lakes Reflect Dreams, and Every Festival Lights Up the Soul🎉🌄
+    <script>
+        function changeno22(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno23" src="uttarakhand.jpeg" alt="Uttarakhand" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">UttaraKhand</h3>
+      <p class="text-gray-500 text-sm">🕌Where Forts Guard Legends, Lakes Reflect Dreams, and Every Festival Lights Up the Soul🎉🌄
+    <script>
+        function changeno23(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+    <div class="min-w-[200px]">
+      <img style="cursor: pointer;" onclick="changeno24" src="WestBengal.webp" alt="WestBengal" class="rounded-xl h-40 object-cover w-full">
+      <h3 class="font-semibold mt-2">WestBengal</h3>
+      <p class="text-gray-500 text-sm">🕌Where Forts Guard Legends, Lakes Reflect Dreams, and Every Festival Lights Up the Soul🎉🌄
+    <script>
+        function changeno24(){
+           window.location.href = "chhattisgarh.html";
+
+        }
+       </script></div>
+  </div>
+</section>
+<section class="px-8 py-12 bg-gray-50">
+  <h2 class="text-3xl font-bold mb-2">Indian Trending Destinations</h2>
+  <p class="text-gray-600 mb-6">Most popular choices for travellers from India</p>
+
+  <!-- Grid -->
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="relative">
+      <img style="cursor: pointer;"src="NewDelhi.webp" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">New Delhi 🇮🇳</div>
+    </div>
+    <div class="relative">
+      <img style="cursor: pointer;"src="bengaluru.avif" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">Bengaluru 🇮🇳</div>
+    </div>
+    <div class="relative">
+      <img style="cursor: pointer;"src="mumbai.avif" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">Mumbai 🇮🇳</div>
+    </div>
+    <div class="relative">
+      <img style="cursor: pointer;"src="Chennai.jpg" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">Chennai 🇮🇳</div>
+    </div>
+    <div class="relative">
+      <img style="cursor: pointer;"src="varnasi.webp" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">Varanasi 🇮🇳</div>
+    </div>
+     <div class="relative">
+      <img style="cursor: pointer;"src="Goa.jpeg" class="rounded-xl w-full h-64 object-cover" />
+      <div class="absolute top-4 left-4 text-white text-xl font-bold drop-shadow">Goa</div>
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+<!-- Add this inside <head> if not already present -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .destination-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .destination-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  }
+</style>
+
+
+
+
+
+
+
+</body>
+</html>
+
